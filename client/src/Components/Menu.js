@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Header, Icon, } from 'semantic-ui-react';
+import {Button, Header, } from 'semantic-ui-react';
 
 const Menu = ({ id, name, updateMenu, deleteMenu }) => (
   <div style={styles.flex}>
@@ -26,10 +26,6 @@ const Menu = ({ id, name, updateMenu, deleteMenu }) => (
 )
 
 const styles = {
-  // complete: {
-  //   textDecoration: "line-through",
-  //   color: "grey",
-  // },
   pointer: {
     cursor: "pointer",
   },

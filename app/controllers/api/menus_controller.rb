@@ -14,13 +14,13 @@ class Api::MenusController < ApplicationController
   end
 
   def update
-    menu = Menu.find(params[:id])
+    menu = Menu.find(params)
     menu.update(menu_params)
     render json: menu
   end
 
   def destroy
-    Menu.find(menu_params[:id]).destroy
+    Menu.find(params[:id]).destroy
     render json: { message: 'Menu deleted' }
   end
 

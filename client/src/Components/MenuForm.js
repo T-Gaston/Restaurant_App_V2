@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, } from "semantic-ui-react";
+import { Form, Button } from "semantic-ui-react";
 
 export default class MenuForm extends React.Component {
 
@@ -29,6 +29,7 @@ export default class MenuForm extends React.Component {
           value={this.state.name}
           onChange={this.handleChange}
         />
+        <Button type='submit'>Submit</Button>
       </Form>
     )
   }
